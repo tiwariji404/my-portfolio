@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Tiwari | Software Developer & Google Student Ambassador</title>
+    <meta name="description" content="Portfolio of Om Tiwari - B.Tech CSE student specializing in React Native, AI/ML, and DSA. Lead at Neo Tech Developer Club & Google Student Ambassador.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Canvas & UI CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Minimal Subtle Grid Overlay -->
+    <div class="grid-background"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-mark">OT</span>
+                <span class="logo-name">Om Tiwari</span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#leadership" class="nav-link">Leadership</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-right">
+                <a href="https://github.com/tiwariji404" target="_blank" class="nav-icon-btn" title="GitHub"><i data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/om-tiwari" target="_blank" class="nav-icon-btn" title="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="https://leetcode.com/u/tiwari_ji_o" target="_blank" class="nav-icon-btn" title="LeetCode"><i data-lucide="code"></i></a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with User's Real Photo -->
+        <section id="hero" class="hero-section">
+            <div class="hero-grid">
+                
+                <!-- Hero Left Info -->
+                <div class="hero-text">
+                    <div class="status-pill">
+                        <span class="pulse-indicator"></span> Google Student Ambassador
+                    </div>
+
+                    <h1 class="hero-heading">
+                        Hi, I'm <span class="name-highlight">Om Tiwari</span>
+                    </h1>
+
+                    <div class="role-switcher">
+                        <span class="role-prefix">Specializing in</span>
+                        <span class="role-text" id="roleText">React Native & AI/ML</span>
+                    </div>
+
+                    <p class="hero-bio">
+                        B.Tech Computer Science student at Shri Rawatpura Sarkar University. Passionate about solving complex Data Structures & Algorithms problems, building mobile apps, and leading developer communities.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Get In Touch</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="mailto:mrtiwari603@gmail.com" class="btn btn-outline">
+                            <i data-lucide="mail"></i> Email Me
+                        </a>
+                    </div>
+
+                    <div class="hero-metrics">
+                        <div class="metric">
+                            <span class="metric-val">2027</span>
+                            <span class="metric-lbl">Graduation Year</span>
+                        </div>
+                        <div class="metric-divider"></div>
+                        <div class="metric">
+                            <span class="metric-val">3+</span>
+                            <span class="metric-lbl">Leadership Roles</span>
+                        </div>
+                        <div class="metric-divider"></div>
+                        <div class="metric">
+                            <span class="metric-val">6+</span>
+                            <span class="metric-lbl">Industry Certifications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Real Photo Frame -->
+                <div class="hero-photo-wrapper">
+                    <div class="photo-card">
+                        <div class="photo-ring"></div>
+                        <div class="photo-inner">
+                            <img src="profile.jpg" alt="Om Tiwari Photo" class="user-photo">
+                        </div>
+                        
+                        <!-- Real Badges -->
+                        <div class="floating-badge badge-top">
+                            <i data-lucide="award" class="icon-gold"></i>
+                            <span>Google Ambassador</span>
+                        </div>
+
+                        <div class="floating-badge badge-bottom">
+                            <i data-lucide="users" class="icon-blue"></i>
+                            <span>Neo Tech Club Lead</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About & Career Objective -->
+        <section id="about" class="section">
+            <div class="section-title-wrap">
+                <span class="section-tag">OVERVIEW</span>
+                <h2 class="section-heading">About & Career Objective</h2>
+            </div>
+
+            <div class="about-card-wrapper">
+                <div class="objective-card">
+                    <div class="obj-header">
+                        <i data-lucide="compass"></i>
+                        <h3>Career Objective</h3>
+                    </div>
+                    <p class="objective-text">
+                        "Highly motivated B.Tech Computer Science student specializing in <strong>React Native</strong> and <strong>AI/ML</strong>. Experienced in leading student developer communities, organizing tech events, and building software projects. Seeking a <strong>Software Development Apprenticeship at Google</strong> to leverage my problem-solving skills, Data Structures & Algorithms (DSA) proficiency, and development experience to build impactful, scalable solutions."
+                    </p>
+                    <div class="location-strip">
+                        <span><i data-lucide="map-pin"></i> Raipur, Chhattisgarh, India</span>
+                        <span><i data-lucide="phone"></i> +91-9341320110</span>
+                        <span><i data-lucide="mail"></i> mrtiwari603@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="edu-header">
+                        <i data-lucide="graduation-cap"></i>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="edu-body">
+                        <h4>Bachelor of Technology (B.Tech)</h4>
+                        <p class="degree-spec">Computer Science and Engineering (CSE)</p>
+                        <p class="university-name">Shri Rawatpura Sarkar University, Raipur</p>
+                        <span class="edu-years">2023 — 2027</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership & Experience Section -->
+        <section id="leadership" class="section">
+            <div class="section-title-wrap">
+                <span class="section-tag">COMMUNITY & ROLES</span>
+                <h2 class="section-heading">Leadership & Experience</h2>
+            </div>
+
+            <div class="leadership-timeline">
+                <!-- Role 1 -->
+                <div class="role-card">
+                    <div class="role-badge-icon"><i data-lucide="users"></i></div>
+                    <div class="role-details">
+                        <div class="role-meta">
+                            <span class="role-period">Present</span>
+                            <span class="role-org">College Club</span>
+                        </div>
+                        <h3 class="role-title">Project Lead</h3>
+                        <h4 class="role-subtitle">Neo Tech Developer Club</h4>
+                        <ul class="role-bullets">
+                            <li>Leading a community of student developers to build technical projects and foster a strong coding culture across campus.</li>
+                            <li>Successfully organized and hosted multiple college-level technical functions, coding workshops, and tech events.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="role-card">
+                    <div class="role-badge-icon icon-google"><i data-lucide="globe"></i></div>
+                    <div class="role-details">
+                        <div class="role-meta">
+                            <span class="role-period">Present</span>
+                            <span class="role-org">Google</span>
+                        </div>
+                        <h3 class="role-title">Google Student Ambassador</h3>
+                        <h4 class="role-subtitle">Google Technologies Campus Drive</h4>
+                        <ul class="role-bullets">
+                            <li>Representing Google technologies on campus and organizing awareness drives to educate students about AI/ML.</li>
+                            <li>Empowering fellow students with hands-on exposure to cloud, AI tools, and developer resources.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="role-card">
+                    <div class="role-badge-icon icon-gfg"><i data-lucide="code-2"></i></div>
+                    <div class="role-details">
+                        <div class="role-meta">
+                            <span class="role-period">Present</span>
+                            <span class="role-org">GeeksforGeeks</span>
+                        </div>
+                        <h3 class="role-title">Campus Mantri</h3>
+                        <h4 class="role-subtitle">GeeksforGeeks Campus Community</h4>
+                        <ul class="role-bullets">
+                            <li>Promoting competitive programming and algorithmic problem-solving among university students.</li>
+                            <li>Driving contest participation and mentorship for Data Structures & Algorithms (DSA).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section id="skills" class="section">
+            <div class="section-title-wrap">
+                <span class="section-tag">CAPABILITIES</span>
+                <h2 class="section-heading">Technical Skills</h2>
+            </div>
+
+            <div class="skills-category-grid">
+                
+                <div class="skill-cat-card">
+                    <div class="cat-icon"><i data-lucide="code"></i></div>
+                    <h3>Languages & Web Tech</h3>
+                    <div class="pill-group">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">TypeScript</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">HTML5</span>
+                        <span class="tech-pill">CSS3</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat-card">
+                    <div class="cat-icon"><i data-lucide="smartphone"></i></div>
+                    <h3>Frameworks & Technologies</h3>
+                    <div class="pill-group">
+                        <span class="tech-pill highlight-pill">React Native</span>
+                        <span class="tech-pill">AI / ML Fundamentals</span>
+                        <span class="tech-pill">RESTful APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat-card">
+                    <div class="cat-icon"><i data-lucide="database"></i></div>
+                    <h3>Databases & Tools</h3>
+                    <div class="pill-group">
+                        <span class="tech-pill">MySQL</span>
+                        <span class="tech-pill">Firebase</span>
+                        <span class="tech-pill">GitHub</span>
+                        <span class="tech-pill">Git</span>
+                    </div>
+                </div>
+
+                <div class="skill-cat-card">
+                    <div class="cat-icon"><i data-lucide="cpu"></i></div>
+                    <h3>Core Competencies</h3>
+                    <div class="pill-group">
+                        <span class="tech-pill">Data Structures & Algorithms (DSA)</span>
+                        <span class="tech-pill">Problem Solving</span>
+                        <span class="tech-pill">Application Development</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section id="projects" class="section">
+            <div class="section-title-wrap">
+                <span class="section-tag">PORTFOLIO</span>
+                <h2 class="section-heading">Featured Projects</h2>
+            </div>
+
+            <div class="projects-list">
+                
+                <!-- Project 1 -->
+                <div class="project-item-card">
+                    <div class="project-header">
+                        <div class="project-type">Rental Platform</div>
+                        <h3>Tenant Shield</h3>
+                    </div>
+                    <p class="project-desc">
+                        Designed a digital platform focused on streamlining peer-to-peer property rentals for users relocating to new cities. Engineered features to connect property seekers and providers directly, eliminating intermediary dependencies.
+                    </p>
+                    <div class="project-foot">
+                        <div class="project-tags">
+                            <span>React Native</span><span>Firebase</span><span>Peer-to-Peer</span>
+                        </div>
+                        <a href="https://github.com/tiwariji404" target="_blank" class="project-link">
+                            <span>View Source</span> <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item-card">
+                    <div class="project-header">
+                        <div class="project-type">Community Networking</div>
+                        <h3>Padosi Connect</h3>
+                    </div>
+                    <p class="project-desc">
+                        Created a location-aware community application to foster local networking and real-time information exchange. Implemented privacy-centric communication channels allowing user interaction without exposing personal contact details.
+                    </p>
+                    <div class="project-foot">
+                        <div class="project-tags">
+                            <span>Mobile App</span><span>Privacy-Centric</span><span>Geolocation</span>
+                        </div>
+                        <a href="https://github.com/tiwariji404" target="_blank" class="project-link">
+                            <span>View Source</span> <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item-card">
+                    <div class="project-header">
+                        <div class="project-type">Enterprise Solution</div>
+                        <h3>College ERP System</h3>
+                    </div>
+                    <p class="project-desc">
+                        Developed an Enterprise Resource Planning (ERP) software module to digitize and streamline college operations. Designed a user-friendly interface for students and faculty with robust database management practices.
+                    </p>
+                    <div class="project-foot">
+                        <div class="project-tags">
+                            <span>Python / TS</span><span>MySQL</span><span>Role Access</span>
+                        </div>
+                        <a href="https://github.com/tiwariji404" target="_blank" class="project-link">
+                            <span>View Source</span> <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="section">
+            <div class="section-title-wrap">
+                <span class="section-tag">CREDENTIALS</span>
+                <h2 class="section-heading">Certifications</h2>
+            </div>
+
+            <div class="certifications-grid">
+                
+                <div class="cert-card">
+                    <div class="cert-icon"><i data-lucide="award"></i></div>
+                    <div>
+                        <h4>Software Engineer Job Simulation</h4>
+                        <p>JPMorgan Chase & Co.</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon icon-g"><i data-lucide="cloud"></i></div>
+                    <div>
+                        <h4>Generative AI</h4>
+                        <p>Google Cloud</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i data-lucide="brain"></i></div>
+                    <div>
+                        <h4>Artificial Intelligence</h4>
+                        <p>Accenture</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i data-lucide="sparkles"></i></div>
+                    <div>
+                        <h4>Claude AI</h4>
+                        <p>Anthropic</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i data-lucide="terminal"></i></div>
+                    <div>
+                        <h4>Python Certification</h4>
+                        <p>Cisco</p>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i data-lucide="check-circle-2"></i></div>
+                    <div>
+                        <h4>Career Edge</h4>
+                        <p>TCS iON</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-box">
+                <div class="contact-left">
+                    <span class="section-tag">GET IN TOUCH</span>
+                    <h2>Let's build something extraordinary together.</h2>
+                    <p>Open for Software Development Apprenticeship opportunities, community events, and technical collaborations.</p>
+                    
+                    <div class="contact-details">
+                        <div class="c-item">
+                            <i data-lucide="mail"></i>
+                            <a href="mailto:mrtiwari603@gmail.com">mrtiwari603@gmail.com</a>
+                        </div>
+                        <div class="c-item">
+                            <i data-lucide="phone"></i>
+                            <span>+91-9341320110</span>
+                        </div>
+                        <div class="c-item">
+                            <i data-lucide="map-pin"></i>
+                            <span>Raipur, Chhattisgarh, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-right" id="mainContactForm">
+                    <div class="input-field">
+                        <label for="cName">Your Name</label>
+                        <input type="text" id="cName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="cEmail">Your Email</label>
+                        <input type="email" id="cEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="cMsg">Message</label>
+                        <textarea id="cMsg" rows="4" placeholder="How can I help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i data-lucide="send"></i>
+                    </button>
+                    <div id="cStatus" class="form-feedback"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2026 Om Tiwari. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/om-tiwari" target="_blank">LinkedIn</a>
+                <a href="https://github.com/tiwariji404" target="_blank">GitHub</a>
+                <a href="https://leetcode.com/u/tiwari_ji_o" target="_blank">LeetCode</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
