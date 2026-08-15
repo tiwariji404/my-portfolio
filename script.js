@@ -203,7 +203,7 @@ function initCursorGlow() {
         position: 'fixed',
         width: '300px',
         height: '300px',
-        background: 'radial-gradient(circle, rgba(34,211,238,0.05) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%)',
         borderRadius: '50%',
         pointerEvents: 'none',
         transform: 'translate(-50%, -50%)',
@@ -261,7 +261,7 @@ function initParticles() {
             vx: (Math.random() - 0.5) * 0.3,
             vy: (Math.random() - 0.5) * 0.3,
             alpha: Math.random() * 0.4 + 0.1,
-            color: Math.random() > 0.5 ? '34, 211, 238' : '167, 139, 250'
+            color: Math.random() > 0.5 ? '255, 255, 255' : '180, 180, 180'
         };
     }
 
@@ -281,7 +281,7 @@ function initParticles() {
                 const dist = Math.sqrt(dx * dx + dy * dy);
                 if (dist < 130) {
                     const alpha = (1 - dist / 130) * 0.12;
-                    ctx.strokeStyle = `rgba(34, 211, 238, ${alpha})`;
+                    ctx.strokeStyle = `rgba(255, 255, 255, ${alpha})`;
                     ctx.lineWidth   = 0.6;
                     ctx.beginPath();
                     ctx.moveTo(particles[i].x, particles[i].y);

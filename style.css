@@ -13,29 +13,29 @@
     --bg-glass: rgba(255, 255, 255, 0.04);
 
     /* Vibrant Accent Palette */
-    --accent-cyan:    #22d3ee;
-    --accent-violet:  #a78bfa;
-    --accent-pink:    #f472b6;
-    --accent-emerald: #34d399;
-    --accent-amber:   #fbbf24;
-    --accent-orange:  #fb923c;
+    --accent-cyan:    #e2e8f0;
+    --accent-violet:  #94a3b8;
+    --accent-pink:    #64748b;
+    --accent-emerald: #10b981;
+    --accent-amber:   #f59e0b;
+    --accent-orange:  #f97316;
 
     /* Gradient Combos */
-    --grad-primary:   linear-gradient(135deg, #22d3ee 0%, #a78bfa 100%);
-    --grad-warm:      linear-gradient(135deg, #f472b6 0%, #fb923c 100%);
-    --grad-cool:      linear-gradient(135deg, #34d399 0%, #22d3ee 100%);
-    --grad-hero:      linear-gradient(135deg, #22d3ee 0%, #a78bfa 50%, #f472b6 100%);
-    --grad-card:      linear-gradient(135deg, rgba(34, 211, 238, 0.08) 0%, rgba(167, 139, 250, 0.08) 100%);
+    --grad-primary:   linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+    --grad-warm:      linear-gradient(135deg, #cbd5e1 0%, #64748b 100%);
+    --grad-cool:      linear-gradient(135deg, #10b981 0%, #059669 100%);
+    --grad-hero:      linear-gradient(135deg, #ffffff 0%, #e2e8f0 50%, #94a3b8 100%);
+    --grad-card:      linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
 
     /* Text */
-    --text-primary:   #f0f4ff;
-    --text-secondary: #94a3b8;
-    --text-muted:     #475569;
+    --text-primary:   #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted:     #64748b;
 
     /* Borders */
-    --border:         rgba(255, 255, 255, 0.07);
-    --border-glow:    rgba(34, 211, 238, 0.25);
-    --border-violet:  rgba(167, 139, 250, 0.25);
+    --border:         rgba(255, 255, 255, 0.1);
+    --border-glow:    rgba(255, 255, 255, 0.2);
+    --border-violet:  rgba(255, 255, 255, 0.15);
 
     /* Typography */
     --font-heading: 'Space Grotesk', sans-serif;
@@ -57,8 +57,8 @@
     /* Shadows */
     --shadow-sm:  0 4px 16px rgba(0,0,0,0.4);
     --shadow-md:  0 8px 32px rgba(0,0,0,0.5);
-    --shadow-glow: 0 0 40px rgba(34, 211, 238, 0.15);
-    --shadow-violet: 0 0 40px rgba(167, 139, 250, 0.15);
+    --shadow-glow: 0 0 40px rgba(255, 255, 255, 0.05);
+    --shadow-violet: 0 0 40px rgba(255, 255, 255, 0.05);
 }
 
 /* ========== RESET & BASE ========== */
@@ -99,17 +99,17 @@ body::after {
     pointer-events: none;
     z-index: -1;
     filter: blur(80px);
-    opacity: 0.35;
+    opacity: 0.15;
     animation: orbFloat 12s ease-in-out infinite alternate;
 }
 body::before {
     width: 600px; height: 600px;
-    background: radial-gradient(circle, #22d3ee55, transparent 70%);
+    background: radial-gradient(circle, rgba(255,255,255,0.05), transparent 70%);
     top: -150px; left: -150px;
 }
 body::after {
     width: 700px; height: 700px;
-    background: radial-gradient(circle, #a78bfa44, transparent 70%);
+    background: radial-gradient(circle, rgba(200,200,200,0.03), transparent 70%);
     bottom: -200px; right: -200px;
     animation-delay: -6s;
 }
@@ -123,7 +123,7 @@ body::after {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-main); }
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #22d3ee, #a78bfa);
+    background: linear-gradient(to bottom, #94a3b8, #64748b);
     border-radius: 10px;
 }
 
@@ -321,9 +321,9 @@ body::after {
 }
 
 @keyframes radioPulse {
-    0%   { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.6); }
-    70%  { box-shadow: 0 0 0 8px rgba(34, 211, 238, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0); }
+    0%   { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+    70%  { box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
 }
 
 /* Hero Heading */
